@@ -34,9 +34,9 @@
             <input type="text" class="form-control" name="address">
         </div>
         @if (count($errors) > 0)
-                <div class="alert alert-danger">
+                <div class="alert alert-danger"> <!-- Dùng để tạo khung thông báo lỗi với kiểu CSS alert alert-danger -->
                     <ul>
-                        @foreach ($errors->all() as $error)
+                        @foreach ($errors->all() as $error) <!-- lặp qua tất cả lỗi-->
                             <p>{{ $error }}</p>
                         @endforeach
                     </ul>
@@ -44,13 +44,18 @@
             @endif
         <button type="submit" class="btn btn-primary" style="left: 200px;">OK</button>
         <div class="dispaly-infor">
-            @if(isset($user))
-                <p>Name: {{$user['name']}}</p>
-                <p>Age: {{$user['age']}}</p>
-                <p>Date: {{$user['date']}}</p>
-                <p>Phone: {{$user['phone']}}</p>
-                <p>Web: {{$user['web']}}</p>
-                <p>Address: {{$user['address']}}</p>
+            @if(session('users'))
+                @foreach(session('users') as $user)
+                    <div class="user-info">
+                        <p>Name: {{ $user['name'] }}</p>
+                        <p>Age: {{ $user['age'] }}</p>
+                        <p>Date: {{ $user['date'] }}</p>
+                        <p>Phone: {{ $user['phone'] }}</p>
+                        <p>Website: {{ $user['web'] }}</p>
+                        <p>Address: {{ $user['address'] }}</p>
+                        <hr>
+                    </div>
+                @endforeach
             @endif
         </div>
     </form>

@@ -7,6 +7,7 @@ use App\Http\Requests;
 use Input, File;
 use Request;
 use App\Http\Requests\signupRequest;
+use Illuminate\Support\Facades\Session;
 
 class signupController extends Controller
 {
@@ -41,7 +42,14 @@ class signupController extends Controller
         'address' => $request->input('address'),
     ];
 
-    return view('signup')->with('user', $user);
+    // Lưu thông tin vào session (dùng push để lưu vào mảng)
+    session()->push('users', $user);
+
+    // Lấy tất cả người dùng từ session
+    $users = session('users', []);
+
+    // Trả về view với thông tin người dùng
+    return view('signup')->with('users', $users);
 }
 
 

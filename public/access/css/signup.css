@@ -1,14 +1,13 @@
-/* Basic styling for the form */
+
 form {
     width: 600px;
-    margin: 0 auto; /* Centers the form horizontally */
+    margin: 0 auto; 
     padding: 20px;
-    background-color: #f9f9f9; /* Light background for the form */
+    background-color: #f9f9f9; 
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-/* Styling for form group labels */
 .form-group label {
     font-size: 16px;
     font-weight: bold;
@@ -17,7 +16,6 @@ form {
     display: block;
 }
 
-/* Styling for form inputs */
 .form-group input {
     width: 100%;
     padding: 10px;
@@ -25,13 +23,13 @@ form {
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-bottom: 15px;
-    box-sizing: border-box; /* Ensures padding doesn't affect input width */
+    box-sizing: border-box; 
 }
 
-/* Button styling */
+
 button[type="submit"] {
     display: block;
-    margin: 20px auto 0; /* Centers the button horizontally */
+    margin: 20px auto 0; 
     padding: 10px 20px;
     background-color: #007bff;
     color: white;
@@ -46,7 +44,6 @@ button[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-/* Error message styling */
 .alert-danger {
     background-color: #f8d7da;
     color: #721c24;
@@ -55,7 +52,6 @@ button[type="submit"]:hover {
     margin-bottom: 20px;
 }
 
-/* Styling for the information display section */
 .display-infor {
     margin-top: 30px;
 }
