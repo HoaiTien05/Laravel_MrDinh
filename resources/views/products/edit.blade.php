@@ -15,13 +15,9 @@
         @csrf
         @method('PUT')
 
-        <!-- Trường ID (ẩn) -->
         <input type="hidden" name="id" value="{{ $product['id'] }}">
-
-        <!-- Trường Tên -->
         <input type="text" name="name" value="{{ old('name', $product['name']) }}" required class="form-control mb-3" placeholder="Tên sản phẩm">
 
-        <!-- Trường Ảnh (Avatar) -->
         <div class="mb-3">
             <label for="avatar" class="form-label">Ảnh đại diện</label>
             <input type="file" name="avatar" class="form-control" accept="image/*">
@@ -32,8 +28,6 @@
             </div>
             @endif
         </div>
-
-        <!-- Nút Cập Nhật -->
         <button type="submit" class="btn btn-primary">Cập nhật</button>
     </form>
 </div>

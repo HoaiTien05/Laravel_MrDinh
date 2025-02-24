@@ -13,16 +13,11 @@
     <form action="{{ route('products.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
 
-        <!-- Trường Tên -->
         <input type="text" name="name" value="{{ old('name') }}" required class="form-control mb-3" placeholder="Tên sản phẩm">
-
-        <!-- Trường Ảnh (Avatar) -->
         <div class="mb-3">
             <label for="avatar" class="form-label">Ảnh đại diện</label>
             <input type="file" name="avatar" class="form-control" accept="image/*">
         </div>
-
-        <!-- Nút Thêm Sản phẩm -->
         <button type="submit" class="btn btn-primary">Thêm sản phẩm</button>
     </form>
 </div>
