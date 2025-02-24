@@ -2,9 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\signupController;
 use App\Http\Controllers\covidController;
+use App\Http\Controllers\ProductController;
+
 
 
 Route::get('/index', [PostController::class, 'index']);
@@ -15,6 +18,8 @@ Route::get('/signup', [signupController::class, 'index']);
 Route::post('/signup', [signupController::class, 'displayInfo']);
 
 Route::get('/covid', [CovidController::class, 'getData']);
+
+Route::resource('products', ProductController::class);
 
 Route::get('/onlyRouter', function () {
     return 'Xin chao PNV';
