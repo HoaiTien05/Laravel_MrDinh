@@ -60,13 +60,15 @@ class ProductController extends Controller
     // Cập nhật sản phẩm
     public function update(StoreProductRequest $request, $id)
     {
-        // Handle image upload and storage
+        
         if ($request->hasFile('avatar')) {
             $avatarPath = $request->file('avatar')->store('avatars', 'public');
         }
 
         $data = $request->validated();
-        $data['avatar'] = $avatarPath ?? $data['avatar']; // Keep existing avatar if not updated
+        if (isset($avatarPath)) {
+            $data['avatar'] = $avatarPath;
+        }
 
         $response = Http::put("$this->apiUrl/$id", $data);
 
