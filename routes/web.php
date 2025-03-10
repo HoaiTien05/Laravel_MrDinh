@@ -17,6 +17,8 @@ use App\Http\Controllers\CreateTablesController;
 
 Route::get('/createTables', [CreateTablesController::class, 'createAllTables']);
 
+Route::get('/trangchu', [PageController::class, 'getIndex']);
+
 Route::get('/tableProducts', [ProductsController::class, 'createTable']);
 
 
