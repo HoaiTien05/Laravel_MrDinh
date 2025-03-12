@@ -18,6 +18,20 @@ use App\Http\Controllers\CreateTablesController;
 Route::get('/createTables', [CreateTablesController::class, 'createAllTables']);
 
 Route::get('/trangchu', [PageController::class, 'getIndex']);
+Route::get('/type/{id}', [PageController::class, 'getLoaiSp']);	
+Route::get('/detail/{id}', [PageController::class, 'getChiTietSanPham'])->name('chitietsanpham');
+
+
+Route::get(uri: '/contact', action: [PageController::class, 'getLienHe']);
+Route::get(uri: '/about', action: [PageController::class, 'getAbout']);
+
+// Route::get('loai-san-pham', [PageController::class, 'getLoaiSp'])->name('loaisanpham');
+// Route::get('/sanpham/{id}', [PageController::class, 'getChiTietSanPham'])->name('chitietsanpham');          
+// Route::get('lien-he', [PageController::class, 'getLienHe']) ->name('lienhe');             
+// Route::get('about', [PageController::class, 'getAbout']) ->name('about');             
+// Route::get('dang-ky', [PageController::class, 'getDangKy']) ->name('dangky');             
+// Route::get('dang-nhap', [PageController::class, 'getDangNhap']) ->name('dangnhap');             
+// Route::get('thanh-toan', [PageController::class, 'getThanhToan']) ->name('thanhtoan'); 
 
 Route::get('/tableProducts', [ProductsController::class, 'createTable']);
 

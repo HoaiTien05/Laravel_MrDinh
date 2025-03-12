@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Laravel </title>
-	<base href="{{asset('')}}"></base>
+	<base href="{{asset('')}}">
+	</base>
 	<link href='http://fonts.googleapis.com/css?family=Dosis:300,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
@@ -15,8 +17,9 @@
 	<link rel="stylesheet" title="style" href="source/assets/dest/css/style.css">
 	<link rel="stylesheet" href="source/assets/dest/css/animate.css">
 	<link rel="stylesheet" title="style" href="source/assets/dest/css/huong-style.css">
-    <link rel="stylesheet" href="{{ asset('source/assets/dest/css/style.css') }}">
+	<link rel="stylesheet" href="{{ asset('source/assets/dest/css/style.css') }}">
 </head>
+
 <body>
 
 
@@ -27,9 +30,10 @@
 	</div>
 
 	@include('footer')
-	
+
 	<!-- include js files -->
 	@include('script')
 
 </body>
+
 </html>
