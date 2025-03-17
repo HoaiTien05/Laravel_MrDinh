@@ -25,6 +25,17 @@ Route::get('/detail/{id}', [PageController::class, 'getChiTietSanPham'])->name('
 Route::get(uri: '/contact', action: [PageController::class, 'getLienHe']);
 Route::get(uri: '/about', action: [PageController::class, 'getAbout']);
 
+Route::get('/admin', [PageController::class, 'getIndexAdmin']);
+
+Route::get('/admin-add-form', [PageController::class, 'getAdminAdd'])->name('add-product');
+Route::post('/admin-add-form', [PageController::class, 'postAdminAdd']);												
+
+Route::get('/admin-edit-form/{id}', [PageController::class, 'getAdminEdit']);
+Route::post('/admin-edit', [PageController::class, 'postAdminEdit']);
+
+Route::post('/admin-delete/{id}', [PageController::class, 'postAdminDelete']);
+
+
 // Route::get('loai-san-pham', [PageController::class, 'getLoaiSp'])->name('loaisanpham');
 // Route::get('/sanpham/{id}', [PageController::class, 'getChiTietSanPham'])->name('chitietsanpham');          
 // Route::get('lien-he', [PageController::class, 'getLienHe']) ->name('lienhe');             
