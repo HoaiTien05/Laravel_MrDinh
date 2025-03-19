@@ -159,7 +159,7 @@
           <div class="widget-body">
             <div class="beta-sales beta-lists">
               <div class="media beta-sales-item">
-                <a class="pull-left" href="product.html"><img src="source/assets/dest/images/products/sales/1.png"
+                <a class="pull-left" href="product.html"><img src="source/image/product/Banh-kem (6).jpg"
                     alt=""></a>
                 <div class="media-body">
                   Sample Woman Top
@@ -167,7 +167,7 @@
                 </div>
               </div>
               <div class="media beta-sales-item">
-                <a class="pull-left" href="product.html"><img src="source/assets/dest/images/products/sales/2.png"
+                <a class="pull-left" href="product.html"><img src="source/image/product/pizza.jpg"
                     alt=""></a>
                 <div class="media-body">
                   Sample Woman Top
@@ -175,7 +175,7 @@
                 </div>
               </div>
               <div class="media beta-sales-item">
-                <a class="pull-left" href="product.html"><img src="source/assets/dest/images/products/sales/3.png"
+                <a class="pull-left" href="product.html"><img src="source/image/product/raspberry.jpg"
                     alt=""></a>
                 <div class="media-body">
                   Sample Woman Top
@@ -183,7 +183,7 @@
                 </div>
               </div>
               <div class="media beta-sales-item">
-                <a class="pull-left" href="product.html"><img src="source/assets/dest/images/products/sales/4.png"
+                <a class="pull-left" href="product.html"><img src="source/image/product/sukem.jpg"
                     alt=""></a>
                 <div class="media-body">
                   Sample Woman Top
@@ -198,7 +198,7 @@
           <div class="widget-body">
             <div class="beta-sales beta-lists">
               <div class="media beta-sales-item">
-                <a class="pull-left" href="product.html"><img src="source/assets/dest/images/products/sales/1.png"
+                <a class="pull-left" href="product.html"><img src="source/image/product/saurieng-dua.jpg"
                     alt=""></a>
                 <div class="media-body">
                   Sample Woman Top
@@ -206,7 +206,7 @@
                 </div>
               </div>
               <div class="media beta-sales-item">
-                <a class="pull-left" href="product.html"><img src="source/assets/dest/images/products/sales/2.png"
+                <a class="pull-left" href="product.html"><img src="source/image/product/MATCHA-MOUSSE.jpg"
                     alt=""></a>
                 <div class="media-body">
                   Sample Woman Top
@@ -214,7 +214,7 @@
                 </div>
               </div>
               <div class="media beta-sales-item">
-                <a class="pull-left" href="product.html"><img src="source/assets/dest/images/products/sales/3.png"
+                <a class="pull-left" href="product.html"><img src="source/image/product/seafood curry_large-900x900.jpg"
                     alt=""></a>
                 <div class="media-body">
                   Sample Woman Top
@@ -222,7 +222,7 @@
                 </div>
               </div>
               <div class="media beta-sales-item">
-                <a class="pull-left" href="product.html"><img src="source/assets/dest/images/products/sales/4.png"
+                <a class="pull-left" href="product.html"><img src="source/image/product/mango-mousse-cake.jpg"
                     alt=""></a>
                 <div class="media-body">
                   Sample Woman Top

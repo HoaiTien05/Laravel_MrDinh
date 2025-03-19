@@ -13,8 +13,8 @@ class PageController extends Controller
     public function getIndex()
 {
     $slide = Slide::all();
-    $newProducts = Product::where('new', 1)->paginate(8); // Sử dụng paginate thay vì get
-    $topProducts = Product::orderBy('unit_price', 'desc')->paginate(10); // Sử dụng paginate thay vì get
+    $newProducts = Product::where('new', 1)->paginate(8); 
+    $topProducts = Product::orderBy('unit_price', 'desc')->paginate(10); 
     return view('page.trangchu', compact('slide', 'newProducts', 'topProducts'));
 }
 
@@ -125,6 +125,13 @@ class PageController extends Controller
         $product = Product::find($id);
         $product->delete();
         return $this->getIndexAdmin();
+    }
+
+    public function getSearch(Request $request) {
+        $query = $request->input('query');
+        $products = Product::where('name', 'LIKE', '%' . $query . '%')->get();
+    
+        return view('page.search_results', compact('products', 'query'));
     }
     
 }

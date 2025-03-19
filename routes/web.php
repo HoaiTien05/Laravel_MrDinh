@@ -35,11 +35,9 @@ Route::post('/admin-edit', [PageController::class, 'postAdminEdit']);
 
 Route::post('/admin-delete/{id}', [PageController::class, 'postAdminDelete']);
 
+Route::get('/search', [PageController::class, 'getSearch'])->name('search');
 
-// Route::get('loai-san-pham', [PageController::class, 'getLoaiSp'])->name('loaisanpham');
-// Route::get('/sanpham/{id}', [PageController::class, 'getChiTietSanPham'])->name('chitietsanpham');          
-// Route::get('lien-he', [PageController::class, 'getLienHe']) ->name('lienhe');             
-// Route::get('about', [PageController::class, 'getAbout']) ->name('about');             
+          
 // Route::get('dang-ky', [PageController::class, 'getDangKy']) ->name('dangky');             
 // Route::get('dang-nhap', [PageController::class, 'getDangNhap']) ->name('dangnhap');             
 // Route::get('thanh-toan', [PageController::class, 'getThanhToan']) ->name('thanhtoan'); 
