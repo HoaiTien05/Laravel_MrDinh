@@ -43,18 +43,7 @@ class PageController extends Controller
     {
         return view('page.about');
     }
-    public function getDangKy()
-    {
-        return view('page.dangky');
-    }
-    public function getDangNhap()
-    {
-        return view('page.dangnhap');
-    }
-    public function getThanhToan()
-    {
-        return view('page.thanhtoan');
-    }
+    
     public function getIndexAdmin()
     {
         $products = Product::all();

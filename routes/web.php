@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\CreateTablesController;
+use App\Http\Controllers\UserController;
 
 Route::get('/createTables', [CreateTablesController::class, 'createAllTables']);
 
@@ -37,6 +38,19 @@ Route::post('/admin-delete/{id}', [PageController::class, 'postAdminDelete']);
 
 Route::get('/search', [PageController::class, 'getSearch'])->name('search');
 
+Route::get('/register', function () {						
+    return view('users.register');						
+});			
+
+Route::post('/register', [UserController::class, 'Register']);
+    
+Route::get('/login', function () {						
+    return view('users.login');						
+});						
+
+Route::post('/login', [UserController::class, 'Login']);
+
+Route::get('logout', [UserController::class, 'Logout']);
           
 // Route::get('dang-ky', [PageController::class, 'getDangKy']) ->name('dangky');             
 // Route::get('dang-nhap', [PageController::class, 'getDangNhap']) ->name('dangnhap');             
